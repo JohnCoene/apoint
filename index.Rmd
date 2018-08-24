@@ -1,0 +1,27 @@
+# apoint
+
+Point component for [aframer](https://aframer.john-coene.com/)
+
+## Installation
+
+```{r, eval = FALSE}
+# install.packages("devtools")
+devtools::install_github("JohnCoene/apoint")
+```
+
+## Example
+
+```{r, eval = TRUE}
+library(aframer)
+library(apoint)
+
+embed_aframe(
+  a_scene(
+    a_dependency(),
+    apoint_dependency(),
+    a_sky(color = "#000"),
+    a_stars()
+  )
+)
+```
+
